@@ -1,0 +1,5 @@
+<h1> Existing articles </h1>
+
+<% @articles	.each do |article| %>
+  <p> <%= article.id %>  : <%= article.title %> </p>
+<% end %>
