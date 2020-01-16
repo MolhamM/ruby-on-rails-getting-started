@@ -1,0 +1,21 @@
+<h1> Existing articles </h1>
+
+<p> 
+  <%= link_to "Create new article" , new_article_path %>
+<p>
+
+<table>
+  <tr>
+    <th> index </th>
+    <th> title </th>
+  </tr>
+  <% @articles.each do |article| %>
+    <tr>
+      <td> <%= article.id %> </td>
+      <td> <%= article.title %> </td>
+      <td> <a href= <%= article_path(article.id) %> > show </a>  </td>     
+      <td> <a href= <%= edit_article_path(article.id) %> > edit </a> </td> 
+    </tr>
+  <% end %>
+
+</table>

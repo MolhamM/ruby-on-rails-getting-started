@@ -1,6 +1,9 @@
 <h1> showing selected article of id 
   <%= @article.id %>
+  <%= link_to "Edit" , edit_article_path(@article) %>
 </h1>
 
 <p> title : <%= @article.title %> </p>
 <p> description : <%= @article.description %> </p>
+
+<a href= <%= articles_path %> > Show all articles </a>
