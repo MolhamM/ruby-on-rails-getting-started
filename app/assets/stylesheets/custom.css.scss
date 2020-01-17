@@ -21,14 +21,42 @@ $navbar-default-bg :#343a40 ;
 }
 
 #nav_items:hover{
- background : #337ab7;
+ background : orange;
 }
 
 #dropdown_item:hover{
- background : #4EE2EC;
+ background : #FFBD00;
 }
 
-.center{
+.jumbotron{
+  background-image: asset-url('fox.jpg');
+  background-size: cover;
+  height :550px;
+}
 
+.jumbotron h1{
+  color : #E0FFFF;
+  font-weight : bold;
+}
 
+.jumbotron p{
+  color : #E0FFFF;
+}
+
+.btn-xlg{
+  background-color :#25292e;
+  border-color: orange;
+}
+
+.btn-xlg:hover{
+  background-color: orange;
+  border-color: orange;
+}
+
+.footer{
+  background-color:#FFFFCF;
+}
+
+.footer ul{
+  float: right;
 }
