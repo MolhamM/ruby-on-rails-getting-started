@@ -1,9 +1,13 @@
-<h1> showing selected article of id 
-  <%= @article.id %>
-  <%= link_to "Edit" , edit_article_path(@article) %>
-</h1>
-
-<p> title : <%= @article.title %> </p>
-<p> description : <%= @article.description %> </p>
-
-<a href= <%= articles_path %> > Show all articles </a>
+<div class="forms-def">
+  <h1 class="headline" align="center">  <%= @article.title %> </h1>
+  <div class="well col-xs-8 col-xs-offset-2">
+    <h4 class="center"><strong>Description:</strong> </h4>
+    <hr> <%= simple_format(@article.description) %>
+    <div class="article-actions">
+      <%= link_to "Edit" , edit_article_path(@article), class: "btn btn-xs btn-primary" %>
+      <%= link_to "View all recommendations" , edit_article_path(@article), class: "btn btn-xs btn-warning" %>
+      <%= link_to "Delete" , article_path(@article), method: :delete ,
+      data: {confirm: "Are you sure you want to delete this recommendation ?"}, class: "btn btn-xs btn-danger" %>
+    </div>
+  </div>
+</div>
