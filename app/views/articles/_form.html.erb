@@ -1,11 +1,4 @@
-<% if @article.errors.any? %>
-<h2> Fix the following errors in order to create article </h2>
-	<ul> 
-	  <% @article.errors.full_messages.each do |msg| %>
-	    <li> <%= msg %> </li>
-	  <% end %>
-	</ul>
-<% end %>
+<%= render 'shared/errors' , obj:@article%>
 
 <div>
 	<div class='col-xs-10'>
@@ -34,6 +27,8 @@
 				</div>
 			</div>
 		<% end %>
-		[ <%= link_to "Cancel and return to recommendations" ,articles_path %> ]
+		<div align="center">
+			[ <%= link_to "Cancel and return to recommendations" ,articles_path %> ]
+		</div>
 	</div>
 </div>

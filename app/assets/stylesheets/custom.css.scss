@@ -3,7 +3,7 @@ $navbar-default-bg :#343a40 ;
 @import "bootstrap";
 
 #logo{
-  
+
   float: left;
   font-size: 1.7em;
   font-weight: bold;
@@ -35,20 +35,20 @@ $navbar-default-bg :#343a40 ;
 .deepest_background{
   position: relative;
   top: -20px;
-  left: 0;  
+  left: 0;
   backround-color: red;
   background-image: asset-url('desert.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;  
-  height : 550px;
+  background-attachment: fixed;
+  height : 720px;
 }
 .jumbotron{
   position: absolute;
   background-image: asset-url('magzara.png');
-  background-size: cover;  
+  background-size: cover;
   opacity: 0.9;
-  height: 551px;
+  height: 722px;
   width: 1000px;
 }
 
@@ -67,7 +67,7 @@ $navbar-default-bg :#343a40 ;
 .btn-xlg{
   background-color :#25292e;
   border-color: orange;
-  margin: 0px 10px;
+  margin: 40px 30px;
 }
 
 .btn-xlg:hover{
@@ -90,7 +90,7 @@ $navbar-default-bg :#343a40 ;
 
 .btn-upper-left{
   background-color: orange;
-  border-color: orange; 
+  border-color: orange;
   margin-top: 10px;
   margin-right: 10px;
   position:absolute;
@@ -111,14 +111,20 @@ $navbar-default-bg :#343a40 ;
 .forms-def{
 	background-color:white;
   position: absolute;
-  background-size: cover;  
+  background-size: cover;
   opacity: 1;
-  height: 551px;
   width: 1000px;
+  height: 722px;
 }
 
 .headline{
   margin-left: 2%;
   margin-bottom:3%;
   font-weight: bold;
+}
+.message-over-background{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  right: 10%;
 }
